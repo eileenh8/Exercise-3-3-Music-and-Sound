@@ -11,8 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://d03l3yccdo8fa" path="res://UI/Instructions.tscn" id="8"]
 [ext_resource type="Script" path="res://Effects/Camera.gd" id="9"]
 [ext_resource type="AudioStream" uid="uid://77otip4kamek" path="res://Assets/wall.wav" id="10_vqqic"]
-[ext_resource type="AudioStream" uid="uid://vs5bivmoolvj" path="res://Assets/music.mp3" id="11_jx7yn"]
 [ext_resource type="AudioStream" uid="uid://bkq6wc8yucp5x" path="res://Assets/paddle.wav" id="12_c2gev"]
+[ext_resource type="AudioStream" uid="uid://cwe20ds3fujtq" path="res://Assets/music1.mp3" id="12_t2g3u"]
 [ext_resource type="AudioStream" uid="uid://efbltfb6t0j" path="res://Assets/brick.wav" id="13_nehkh"]
 [ext_resource type="AudioStream" uid="uid://chkh6lvx5tb63" path="res://Assets/die.wav" id="14_cfnv1"]
 
@@ -88,7 +88,7 @@ script = ExtResource("9")
 stream = ExtResource("10_vqqic")
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("11_jx7yn")
+stream = ExtResource("12_t2g3u")
 autoplay = true
 
 [node name="Paddle_Sound" type="AudioStreamPlayer" parent="."]

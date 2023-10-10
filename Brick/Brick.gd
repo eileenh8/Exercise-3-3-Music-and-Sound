@@ -60,9 +60,9 @@ func _physics_process(_delta):
 		elif not color_completed:
 			$ColorRect.color = colors[color_index]
 			color_completed = true
-		var pos_x = (sin(Global.sway_index)*(sway_amplitude + sway_randomizer.x))
-		var pos_y = (cos(Global.sway_index)*(sway_amplitude + sway_randomizer.y))
-		$ColorRect.rect_position = Vector2(sway_initial_position.x + pos_x, sway_initial_position.y + pos_y)
+	var pos_x = (sin(Global.sway_index)*(sway_amplitude + sway_randomizer.x))
+	var pos_y = (cos(Global.sway_index)*(sway_amplitude + sway_randomizer.y))
+	$ColorRect.position = Vector2(sway_initial_position.x + pos_x, sway_initial_position.y + pos_y)
 
 
 func hit(_ball):
